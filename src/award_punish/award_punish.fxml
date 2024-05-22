@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="award_punish.Award_punishController">
+   <children>
+      <Text layoutX="366.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="奖惩管理">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="fx_2" layoutX="166.0" layoutY="201.0" mnemonicParsing="false" onAction="#asearch" prefHeight="46.0" prefWidth="213.0" text="查看获奖情况" />
+      <Button fx:id="fx_6" layoutX="496.0" layoutY="201.0" mnemonicParsing="false" onAction="#psearch" prefHeight="46.0" prefWidth="213.0" text="查看惩罚情况" />
+      <Button fx:id="fx_3" layoutX="166.0" layoutY="254.0" mnemonicParsing="false" onAction="#a_add" prefHeight="46.0" prefWidth="213.0" text="添加奖项" />
+      <Button fx:id="fx_7" layoutX="496.0" layoutY="254.0" mnemonicParsing="false" onAction="#p_add" prefHeight="46.0" prefWidth="213.0" text="添加惩罚" />
+      <TextField fx:id="fx_1" layoutX="166.0" layoutY="159.0" prefHeight="30.0" prefWidth="213.0" promptText="学号" />
+      <TextField fx:id="fx_5" layoutX="496.0" layoutY="159.0" prefHeight="30.0" prefWidth="213.0" promptText="获奖项/惩罚项" />
+      <Button fx:id="fx_4" layoutX="166.0" layoutY="314.0" mnemonicParsing="false" onAction="#a_delete" prefHeight="46.0" prefWidth="213.0" text="删除奖项" />
+      <Button fx:id="fx_8" layoutX="496.0" layoutY="314.0" mnemonicParsing="false" onAction="#p_delete" prefHeight="46.0" prefWidth="213.0" text="删除惩罚" />
+      <Label fx:id="fx_9" layoutX="709.0" layoutY="394.0" prefHeight="59.0" prefWidth="167.0" />
+      <TableView fx:id="fx_12" layoutX="284.0" layoutY="386.0" prefHeight="146.0" prefWidth="295.0">
+        <columns>
+          <TableColumn fx:id="fx_10" prefWidth="148.0" text="sno" />
+          <TableColumn fx:id="fx_11" minWidth="0.0" prefWidth="146.0" text="award/punish" />
+        </columns>
+      </TableView>
+      <Button fx:id="fx_13" layoutX="166.0" layoutY="394.0" mnemonicParsing="false" onAction="#add_award" text="添加奖项类" />
+      <Button fx:id="fx_14" layoutX="614.0" layoutY="394.0" mnemonicParsing="false" onAction="#add_punish" text="添加惩罚类" />
+      <Button fx:id="fx_15" layoutX="166.0" layoutY="444.0" mnemonicParsing="false" onAction="#delete_award" text="删除奖项类" />
+      <Button fx:id="fx_16" layoutX="614.0" layoutY="444.0" mnemonicParsing="false" onAction="#delete_punish" text="删除惩罚类" />
+   </children>
+</AnchorPane>

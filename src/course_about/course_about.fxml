@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course_about.Course_aboutController">
+   <children>
+      <Text layoutX="332.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="课程相关">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Text>
+      <Button fx:id="fx_1" layoutX="356.0" layoutY="148.0" mnemonicParsing="false" onAction="#Search_course" prefHeight="48.0" prefWidth="165.0" text="查询课程">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_2" layoutX="191.0" layoutY="231.0" mnemonicParsing="false" onAction="#Add_course" prefHeight="48.0" prefWidth="165.0" text="添加课程">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_3" layoutX="521.0" layoutY="231.0" mnemonicParsing="false" onAction="#Delete_course" prefHeight="48.0" prefWidth="165.0" text="删除课程">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_4" layoutX="198.0" layoutY="333.0" mnemonicParsing="false" onAction="#Select_course" prefHeight="48.0" prefWidth="158.0" text="学生选课">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_5" layoutX="514.0" layoutY="333.0" mnemonicParsing="false" onAction="#Search_student_course" prefHeight="48.0" prefWidth="180.0" text="查询课程成绩">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

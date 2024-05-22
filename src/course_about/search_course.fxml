@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course_about.Search_courseController">
+   <children>
+      <Text layoutX="365.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="课程查询">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fx_1" layoutX="276.0" layoutY="206.0" promptText="课程号">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="fx_2" layoutX="396.0" layoutY="285.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="83.0" text="查询" />
+      <TableView fx:id="fx_7" layoutX="175.0" layoutY="345.0" prefHeight="200.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="fx_3" prefWidth="132.0" text="cno" />
+          <TableColumn fx:id="fx_4" prefWidth="131.0" text="cname" />
+            <TableColumn fx:id="fx_5" prefWidth="132.0" text="ctime" />
+            <TableColumn fx:id="fx_6" prefWidth="130.0" text="cscore" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

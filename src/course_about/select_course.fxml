@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course_about.Select_courseController">
+   <children>
+      <Text layoutX="280.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 学生成绩录入/取消">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fx_1" layoutX="186.0" layoutY="219.0" prefHeight="30.0" prefWidth="154.0" promptText="学号" />
+      <TextField fx:id="fx_2" layoutX="360.0" layoutY="219.0" prefHeight="30.0" prefWidth="154.0" promptText="课程号" />
+      <Button fx:id="fx_4" layoutX="368.0" layoutY="309.0" mnemonicParsing="false" onAction="#button1" prefHeight="30.0" prefWidth="138.0" text="选课" />
+      <Button fx:id="fx_5" layoutX="369.0" layoutY="383.0" mnemonicParsing="false" onAction="#button2" prefHeight="30.0" prefWidth="138.0" text="退课" />
+      <Label fx:id="fx_6" layoutX="360.0" layoutY="457.0" prefHeight="87.0" prefWidth="199.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fx_3" layoutX="538.0" layoutY="219.0" prefHeight="30.0" prefWidth="154.0" promptText="成绩" />
+   </children>
+</AnchorPane>

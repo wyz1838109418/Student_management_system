@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course_about.Delete_courseController">
+   <children>
+      <Text layoutX="366.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="取消课程">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fx_1" layoutX="314.0" layoutY="184.0" prefHeight="46.0" prefWidth="249.0" promptText="课程号" />
+      <Button fx:id="fx_2" layoutX="394.0" layoutY="300.0" mnemonicParsing="false" onAction="#button" prefHeight="30.0" prefWidth="89.0" text="确定" />
+      <Label fx:id="fx_3" layoutX="302.0" layoutY="371.0" prefHeight="117.0" prefWidth="273.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

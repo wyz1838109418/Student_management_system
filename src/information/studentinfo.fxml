@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="information.StudentinfoController">
+    <children>
+        <Button fx:id="fx_1" layoutX="373.0" layoutY="129.0" mnemonicParsing="false" onAction="#Studselect" text="学生查询">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_3" layoutX="525.0" layoutY="215.0" mnemonicParsing="false" onAction="#Updateage" text="修改年龄">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_2" layoutX="216.0" layoutY="215.0" mnemonicParsing="false" onAction="#Updategender" text="修改性别">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_6" layoutX="216.0" layoutY="386.0" mnemonicParsing="false" onAction="#Updatephone" text="修改电话">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_5" layoutX="525.0" layoutY="301.0" mnemonicParsing="false" onAction="#Updatephoto" text="修改照片">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_4" layoutX="216.0" layoutY="301.0" mnemonicParsing="false" onAction="#Updateantionality" text="修改民族">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_7" layoutX="525.0" layoutY="386.0" mnemonicParsing="false" onAction="#Updatemajor" text="修改专业">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="fx_8" layoutX="724.0" layoutY="477.0" mnemonicParsing="false" onAction="#Close" text="退出" />
+        <Text layoutX="287.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="学生基本信息">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

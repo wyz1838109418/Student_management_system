@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="information.PhoneController">
+   <children>
+      <Text layoutX="216.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="输入你要修改电话的学生学号和电话：" wrappingWidth="466.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fx_1" layoutX="216.0" layoutY="186.0" prefHeight="53.0" prefWidth="295.0" promptText="学号" />
+      <Label fx:id="fx_4" layoutX="357.0" layoutY="377.0" prefHeight="43.0" prefWidth="139.0" />
+      <Button fx:id="fx_3" layoutX="380.0" layoutY="271.0" mnemonicParsing="false" onAction="#button" prefHeight="43.0" prefWidth="81.0" text="修改" />
+      <TextField fx:id="fx_2" layoutX="555.0" layoutY="188.0" prefHeight="53.0" prefWidth="107.0" promptText="电话" />
+   </children>
+</AnchorPane>

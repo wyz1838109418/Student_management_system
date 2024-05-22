@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course_about.SscController">
+   <children>
+      <Text layoutX="315.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="查询学生成绩">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fx_1" layoutX="262.0" layoutY="184.0" prefHeight="46.0" prefWidth="323.0" promptText="学号" />
+      <TableView fx:id="fx_6" layoutX="242.0" layoutY="310.0" prefHeight="200.0" prefWidth="363.0">
+        <columns>
+            <TableColumn fx:id="fx_3" prefWidth="114.0" text="sno" />
+          <TableColumn fx:id="fx_4" prefWidth="127.0" text="cno" />
+          <TableColumn fx:id="fx_5" prefWidth="121.0" text="score" />
+        </columns>
+      </TableView>
+      <Button fx:id="fx_2" layoutX="389.0" layoutY="254.0" mnemonicParsing="false" onAction="#search" text="确认" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sadd_delete.SdeleteController">
+   <children>
+      <Text layoutX="315.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="删除学生信息">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fx_1" layoutX="305.0" layoutY="193.0" prefHeight="46.0" prefWidth="278.0" promptText="学号" />
+      <Button fx:id="fx_2" layoutX="413.0" layoutY="285.0" mnemonicParsing="false" onAction="#button" text="确定" />
+      <Label fx:id="fx_3" layoutX="356.0" layoutY="386.0" prefHeight="86.0" prefWidth="202.0" text="Label" />
+   </children>
+</AnchorPane>

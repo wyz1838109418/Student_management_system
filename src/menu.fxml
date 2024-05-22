@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="599.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+   <children>
+      <Text fx:id="title" layoutX="274.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="学籍管理系统">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Text>
+      <Button fx:id="fx_1" layoutX="152.0" layoutY="254.0" mnemonicParsing="false" onAction="#Stuinfo" text="学生个人基本信息" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_3" layoutX="152.0" layoutY="403.0" mnemonicParsing="false" onAction="#Course_about" prefHeight="52.0" prefWidth="244.0" text="课程相关" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_4" layoutX="476.0" layoutY="403.0" mnemonicParsing="false" onAction="#Award_Punish" prefHeight="52.0" prefWidth="244.0" text="奖惩相关">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_2" layoutX="478.0" layoutY="256.0" mnemonicParsing="false" onAction="#Sadd_delete" prefHeight="48.0" prefWidth="244.0" text="学生添加与删除">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="fx_5" layoutX="749.0" layoutY="504.0" mnemonicParsing="false" onAction="#Close" text="退出" />
+   </children>
+</AnchorPane>

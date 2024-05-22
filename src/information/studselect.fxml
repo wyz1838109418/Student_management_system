@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="information.StudselectController">
+    <children>
+        <Text layoutX="263.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="输入你要查询学生的学号：">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Text>
+        <TextField fx:id="fx_1" layoutX="276.0" layoutY="142.0" prefHeight="42.0" prefWidth="323.0" promptText="学号" />
+        <Button fx:id="fx_2" layoutX="397.0" layoutY="194.0" mnemonicParsing="false" onAction="#search" prefHeight="42.0" prefWidth="68.0" text="查询" />
+        <TableView fx:id="fx_12" editable="true" layoutX="6.0" layoutY="255.0" prefHeight="272.0" prefWidth="865.0">
+            <columns>
+                <TableColumn fx:id="fx_3" prefWidth="48.0" text="id" />
+                <TableColumn fx:id="fx_4" prefWidth="90.0" text="name" />
+                <TableColumn fx:id="fx_5" minWidth="8.0" prefWidth="60.0" text="gender" />
+                <TableColumn fx:id="fx_6" prefWidth="47.0" text="age" />
+                <TableColumn fx:id="fx_7" prefWidth="89.0" text="antionality" />
+                <TableColumn fx:id="fx_8" prefWidth="162.0" text="photo" />
+                <TableColumn fx:id="fx_9" prefWidth="122.0" text="phone" />
+                <TableColumn fx:id="fx_10" prefWidth="95.0" text="totalCredits" />
+                <TableColumn fx:id="fx_11" prefWidth="161.0" text="major" />
+            </columns>
+        </TableView>
+      <WebView fx:id="fx_15" layoutX="635.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0" />
+    </children>
+</AnchorPane>
