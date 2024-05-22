@@ -99,7 +99,8 @@ public class StudselectController {
             student student1 = new student(id, name, gender, age, nationality, photo, phone, totalCredits, major);
             data.add(student1);
             WebEngine webEngine = fx_15.getEngine();
-            webEngine.load("http://gips3.baidu.com/it/u=1821127123,1149655687&fm=3028&app=3028&f=JPEG&fmt=auto?w=720&h=1280");
+            String viewaddress = "http://home.ustc.edu.cn/~wangyizhou/sjk/"+photo;
+            webEngine.load(viewaddress);
         }
         fx_12.setItems(data);
     }
