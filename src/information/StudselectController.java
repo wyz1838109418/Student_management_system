@@ -56,6 +56,9 @@ public class StudselectController {
     @FXML
     private TableView<student> fx_12;
 
+    @FXML
+    private Button fx_16;
+
 
     @FXML
     private void initialize() {
@@ -101,6 +104,36 @@ public class StudselectController {
             WebEngine webEngine = fx_15.getEngine();
             String viewaddress = "http://home.ustc.edu.cn/~wangyizhou/sjk/"+photo;
             webEngine.load(viewaddress);
+        }
+        fx_12.setItems(data);
+    }
+
+    @FXML
+    private void searchall() throws ClassNotFoundException, SQLException, IOException {
+        ObservableList<student> data = FXCollections.observableArrayList();
+        // 1. 注册驱动
+        Class.forName("com.mysql.cj.jdbc.Driver");// 建议写上，不写也不会报错
+        // 2. 获取数据库连接
+        String url = "jdbc:mysql://127.0.0.1:3306/?user=root";
+        String username = "root";
+        String password = "123456";
+        Connection conn = DriverManager.getConnection(url, username, password);
+        // 3. 定义sql
+        String sql = "SELECT * FROM Student_management.student";
+        Statement stmt = conn.createStatement();
+        ResultSet rs = stmt.executeQuery(sql);
+        while (rs.next()) {
+            String id = (String) rs.getString("sno");
+            String name = (String) rs.getString("sname");
+            String gender = (String) rs.getString("sex");
+            String age = (String) rs.getString("age");
+            String nationality = (String) rs.getString("racial");
+            String photo = (String) rs.getString("picture");
+            String phone = (String) rs.getString("contact");
+            String totalCredits = (String) rs.getString("total_credits");
+            String major = (String) rs.getString("major");
+            student student1 = new student(id, name, gender, age, nationality, photo, phone, totalCredits, major);
+            data.add(student1);
         }
         fx_12.setItems(data);
     }

@@ -17,7 +17,7 @@
             <Font size="24.0" />
          </font>
       </TextField>
-      <Button fx:id="fx_2" layoutX="396.0" layoutY="285.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="83.0" text="查询" />
+      <Button fx:id="fx_2" layoutX="289.0" layoutY="285.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="83.0" text="查询" />
       <TableView fx:id="fx_7" layoutX="175.0" layoutY="345.0" prefHeight="200.0" prefWidth="526.0">
         <columns>
           <TableColumn fx:id="fx_3" prefWidth="132.0" text="cno" />
@@ -26,5 +26,6 @@
             <TableColumn fx:id="fx_6" prefWidth="130.0" text="cscore" />
         </columns>
       </TableView>
+      <Button fx:id="fx_10" layoutX="471.0" layoutY="285.0" mnemonicParsing="false" onAction="#searchall" text="查询所有课程" />
    </children>
 </AnchorPane>
