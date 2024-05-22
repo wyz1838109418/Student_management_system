@@ -14,6 +14,6 @@
       </Text>
       <TextField fx:id="fx_1" layoutX="305.0" layoutY="193.0" prefHeight="46.0" prefWidth="278.0" promptText="学号" />
       <Button fx:id="fx_2" layoutX="413.0" layoutY="285.0" mnemonicParsing="false" onAction="#button" text="确定" />
-      <Label fx:id="fx_3" layoutX="356.0" layoutY="386.0" prefHeight="86.0" prefWidth="202.0" text="Label" />
+      <Label fx:id="fx_3" layoutX="356.0" layoutY="386.0" prefHeight="86.0" prefWidth="202.0" />
    </children>
 </AnchorPane>
